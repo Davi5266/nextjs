@@ -1,0 +1,72 @@
+Para instalar a versão mais recente do npm e do Next.js no Lubuntu, siga estes passos:
+
+### 1. Atualizar o sistema
+
+Abra um terminal e execute o seguinte comando para garantir que seu sistema esteja atualizado:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+### 2. Instalar o Node.js
+
+Você pode usar o NodeSource para instalar a versão mais recente do Node.js, que já vem com o npm. Primeiro, adicione o repositório:
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+```
+
+**Nota:** Substitua `16.x` pela versão desejada (por exemplo, `18.x` para a versão 18).
+
+Agora, instale o Node.js:
+
+```bash
+sudo apt install -y nodejs
+```
+
+### 3. Verificar a instalação
+
+Verifique se o Node.js e o npm foram instalados corretamente:
+
+```bash
+node -v
+npm -v
+```
+
+### 4. Atualizar o npm (opcional)
+
+Se você quiser garantir que está usando a versão mais recente do npm, você pode atualizá-lo com o seguinte comando:
+
+```bash
+sudo npm install -g npm@latest
+```
+
+### 5. Instalar o Next.js
+
+Agora que você tem o Node.js e o npm instalados, você pode criar um novo projeto Next.js. Primeiro, crie uma nova pasta para seu projeto e acesse-a:
+
+```bash
+mkdir meu-projeto-next
+cd meu-projeto-next
+```
+
+Em seguida, inicie um novo projeto Next.js:
+
+```bash
+npx create-next-app@latest
+```
+
+Siga as instruções que aparecerão no terminal para configurar seu projeto.
+
+### 6. Iniciar o servidor de desenvolvimento
+
+Após a instalação, navegue até o diretório do seu projeto e inicie o servidor de desenvolvimento:
+
+```bash
+cd nome-do-seu-projeto
+npm run dev
+```
+
+Agora você pode acessar seu aplicativo Next.js em `http://localhost:3000`.
+
+Se precisar de mais ajuda, é só avisar!
