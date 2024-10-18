@@ -1,7 +1,8 @@
 const Joao = () => {
     return (
         <div>
-            <h1>Ok</h1>
+            <h1>João</h1>
+            <p>Navegando entre páginas</p>
         </div>
     );
 }
