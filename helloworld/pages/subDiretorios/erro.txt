@@ -1,0 +1,13 @@
+erro:
+nextjs: {todoItem.completed.toString()} erro: TypeError: Cannot read properties of undefined (reading 'toString') 
+
+resolução:
+O erro `TypeError: Cannot read properties of undefined (reading 'toString')` indica que `todoItem` ou `todoItem.completed` está `undefined`. Para resolver isso, você pode adicionar uma verificação para garantir que `todoItem` e `todoItem.completed` não sejam `undefined` antes de chamar `toString()`. Aqui está um exemplo de como você pode fazer isso:
+
+```jsx
+{todoItem && todoItem.completed !== undefined ? todoItem.completed.toString() : 'Estado indefinido'}
+```
+
+Dessa forma, se `todoItem` ou `todoItem.completed` estiverem `undefined`, você evitará o erro e pode exibir uma mensagem alternativa. 
+
+Certifique-se também de que `todoItem` está sendo corretamente passado como uma propriedade ou está sendo recuperado do estado antes de tentar acessá-lo.

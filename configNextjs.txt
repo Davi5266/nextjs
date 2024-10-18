@@ -69,4 +69,4 @@ npm run dev
 
 Agora você pode acessar seu aplicativo Next.js em `http://localhost:3000`.
 
-Se precisar de mais ajuda, é só avisar!
+Para importar deversos módulos vá no arquivo "tsconfig.json" e de o valor false para "isolatedModules"
