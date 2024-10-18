@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Teste002 = () => {
     return (
         <div>
@@ -5,10 +7,13 @@ const Teste002 = () => {
 
             <ul>
                 <li>
-                    <a href="/subDiretorios/joao">link01</a>
+                    <Link href="/subDiretorios/joao">link01</Link>
                 </li>
                 <li>
-                    <a href="/subDiretorios/maria">link02</a>
+                    <Link href="/subDiretorios/maria">link02</Link>
+                </li>
+                <li>
+                    <Link href="/subDiretorios/maria">Teste tag: Link</Link>
                 </li>
             </ul>
         </div>
